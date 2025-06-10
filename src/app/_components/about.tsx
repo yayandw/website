@@ -21,7 +21,7 @@ export default function About() {
             </p>
             <blockquote className="text-[#555555] pl-8">
                 <br/>
-                “Dreams are not those which comes while we are sleeping, but dreams are those when you don't sleep
+                “Dreams are not those which comes while we are sleeping, but dreams are those when you don&#39;t sleep
                 before fulfilling them.” – Abdul Kalam
             </blockquote>
         </div>

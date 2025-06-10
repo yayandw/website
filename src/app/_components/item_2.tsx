@@ -7,64 +7,42 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Link from 'next/link';
 
-const images = [
-    '/cu.webp',
-    '/ds.webp',
-    '/oneapp.webp',
-    '/cu.webp',
-    '/ds.webp',
-    '/oneapp.webp',
-    '/cu.webp',
-    '/ds.webp',
-    '/oneapp.webp',
-    '/cu.webp',
-    '/ds.webp',
-    '/oneapp.webp',
-    '/cu.webp',
-    '/ds.webp',
-    '/oneapp.webp',
-];
-
-export default function ItemTextImage() {
+export default function ItemTextImage({year, title, works = undefined, reverseDirection = false, url = ""}: {year: string, title: string, works?: string[], reverseDirection?: boolean, url?: string}) {
     return (
-        <div className="mb-4 grid grid-cols-5 items-start">
+        <div className="grid grid-cols-5 items-start">
             <div className="mr-4">
-                <span className="text-[#999999]">2008 — present</span>
+                <span className="text-[#999999]">{year}</span>
             </div>
             <div className="col-span-4">
-                <h3 className="text-base font-medium text-[#111111]">
-                    Programmer{" "}
-                    <a
-                        href="#"
-                        className="text-blue-500 text-sm"
-                        title="Visit company website"
-                    >
-                        ↗
-                    </a>
-                </h3>
+                <Link className="text-base font-medium text-[#111111] hover:underline" href={"#"}>
+                    {title}
+                </Link>
                 <p className="text-[#555555]">PT easySoft Indonesia</p>
-                <Swiper
-                    className="mt-4"
-                    spaceBetween={1}
-                    slidesPerView={3}
-                    modules={[Autoplay]}
-                    autoplay={{delay: 1500, disableOnInteraction: false}}
-                    loop={true}
-                >
-                    {images.map((src, index) => (
-                        <SwiperSlide key={index}>
-                            <Link href="https://play.google.com/store/apps/dev?id=6991340471823577106">
-                                <Image
-                                    src={src}
-                                    alt={`Slide ${index}`}
-                                    width={78}
-                                    height={78}
-                                    className="object-cover"
-                                />
-                            </Link>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                {works !== undefined && (
+                    <div className="max-w-1/2 mt-4">
+                        <Swiper
+                            spaceBetween={16}
+                            slidesPerView={3}
+                            modules={[Autoplay]}
+                            autoplay={{delay: 1500, disableOnInteraction: false, reverseDirection: reverseDirection, pauseOnMouseEnter: true}}
+                            loop={true}
+                        >
+                            {works.map((src, index) => (
+                                <SwiperSlide key={index}>
+                                    <Link href={url} target={url === "" ? "" : "_blank"}>
+                                        <Image
+                                            src={src}
+                                            alt={`Slide ${index}`}
+                                            width={128}
+                                            height={128}
+                                            className="object-cover rounded-2xl"
+                                        />
+                                    </Link>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                )}
             </div>
         </div>
     )

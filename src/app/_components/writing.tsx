@@ -20,6 +20,14 @@ interface Post {
 
 export default function Writing() {
     const [posts, setPosts] = useState<Post[]>([]);
+    const formatDate = (date: Date): string => {
+        const options: Intl.DateTimeFormatOptions = {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+        };
+        return new Intl.DateTimeFormat('en-GB', options).format(date);
+    };
     useEffect(() => {
         fetch('/api/medium')
             .then(res => res.json())
@@ -27,7 +35,7 @@ export default function Writing() {
                 const parsedPosts = posts.map((item: FeedItem) => {
                     const pubDate = new Date(item.pubDate);
                     const post: Post = {
-                        year: `${pubDate.getFullYear()}-${pubDate.getMonth() + 1}-${pubDate.getDate()}`,
+                        year: formatDate(pubDate),
                         title: item.title,
                         description: item["content:encodedSnippet"].substring(0, 500),
                         url: item.link

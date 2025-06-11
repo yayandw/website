@@ -53,6 +53,7 @@ export default function Home() {
                     <ItemText year="2005 - 2008" thumbnail="/smk_telkom_malang.jpg" title="SMK Telkom Malang"
                               description="Higher Secondary" url="https://www.smktelkom-mlg.sch.id/"/>
                 </Section>
+                {/* Contact Section */}
                 <Section title="Contact">
                     <ItemText icon="/linkedin.png" year="LinkedIn" title="yayandw" description=""
                               url="https://www.linkedin.com/in/yayandw/"/>

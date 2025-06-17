@@ -1,13 +1,15 @@
+import Tag from "@/app/_components/tag";
+
 export default function About() {
     return (
         <div>
             <h2 className="text-lg font-bold mb-2 text-[#111111]">About</h2>
             <div className="flex gap-2 mb-4">
-                <span className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm">#Technology</span>
-                <span className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm">#Application Development</span>
-                <span className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm">#AI</span>
-                <span className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm">#Machine Learning</span>
-                <span className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm">#Automation</span>
+                <Tag>#Technology</Tag>
+                <Tag>#Application Development</Tag>
+                <Tag>#AI</Tag>
+                <Tag>#Machine Learning</Tag>
+                <Tag>#Automation</Tag>
             </div>
             <p className="text-[#555555]">
                 Saya adalah seorang Full Stack Developer dengan minat dan keahlian di bidang teknologi,

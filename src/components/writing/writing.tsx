@@ -1,8 +1,8 @@
 'use client'
 
 import {useEffect, useState} from 'react';
-import ItemText from "@/app/_components/item_1";
-import Section from "@/app/_components/section";
+import ItemText from "@/components/itemtext/itemtext";
+import Section from "@/components/section/section";
 
 interface FeedItem {
     title: string;

@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Section from "@/app/_components/section";
-import Header from "@/app/_components/header";
-import About from "@/app/_components/about";
-import ItemTextImage from "@/app/_components/item_2";
-import ItemText from "@/app/_components/item_1";
-import Writing from "@/app/_components/writing";
+import Section from "@/components/section/section";
+import Header from "@/components/header/header";
+import About from "@/components/about/about";
+import ItemTextImage from "@/components/itemtextimage/itemtextimage";
+import ItemText from "@/components/itemtext/itemtext";
+import Writing from "@/components/writing/writing";
 
 const programmer = [
     '/cu.webp',

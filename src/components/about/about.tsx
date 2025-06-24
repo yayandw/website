@@ -1,4 +1,4 @@
-import Tag from "@/app/_components/tag";
+import Tag from "@/components/tag/tag";
 
 export default function About() {
     return (

@@ -34,3 +34,23 @@
         transform: translateY(-10px);
     }
 }
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+}
+
+.carouselInner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carouselItem {
+    flex: 0 0 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}

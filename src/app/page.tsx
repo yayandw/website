@@ -10,9 +10,6 @@ const programmer = [
     '/cu.webp',
     '/ds.webp',
     '/oneapp.webp',
-    '/cu.webp',
-    '/ds.webp',
-    '/oneapp.webp',
 ];
 
 const support = [
@@ -38,10 +35,9 @@ export default function Home() {
                 {/* Work Experience Section */}
                 <Section title="Work Experience">
                     <ItemTextImage year="2015 - present" title="Leader"/>
-                    <ItemTextImage year="2012 - 2015" title="Programmer" works={programmer} reverseDirection={true}
+                    <ItemTextImage year="2012 - 2015" title="Programmer" works={programmer}
                                    url="https://play.google.com/store/apps/dev?id=6991340471823577106"/>
-                    <ItemTextImage year="2008 - 2012" title="Technical Support" works={support}
-                                   reverseDirection={false}/>
+                    <ItemTextImage year="2008 - 2012" title="Technical Support" works={support}/>
                 </Section>
                 { /* Writing Section https://medium.com/feed/@yayandwicaksono */}
                 <Writing/>

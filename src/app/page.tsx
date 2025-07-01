@@ -5,6 +5,7 @@ import About from "@/components/about/about";
 import ItemTextImage from "@/components/itemtextimage/itemtextimage";
 import ItemText from "@/components/itemtext/itemtext";
 import Writing from "@/components/writing/writing";
+import Footer from "@/components/footer/footer";
 
 const programmer = [
     '/cu.webp',
@@ -60,6 +61,7 @@ export default function Home() {
                     <ItemText icon="/gmail.png" year="Email" title="ya2n.wicaksono@gmail.com" description=""
                               url="mailto:ya2n.wicaksono@gmail.com"/>
                 </Section>
+                <Footer/>
             </div>
         </div>
     );

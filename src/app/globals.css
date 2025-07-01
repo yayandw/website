@@ -23,7 +23,7 @@
 
 .bouncy-text:hover {
     animation: bounce 0.6s ease infinite;
-    color: #0077ff;
+    color: #ffffff;
 }
 
 @keyframes bounce {

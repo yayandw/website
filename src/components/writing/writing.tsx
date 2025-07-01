@@ -86,7 +86,7 @@ export default function Writing() {
                     {hasMore && (
                         <button
                             onClick={handleLoadMore}
-                            className="mt-4 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                            className="w-32 place-self-center hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-white mt-4 px-4 py-2 bg-gray-200 rounded cursor-pointer"
                         >
                             Load More
                         </button>

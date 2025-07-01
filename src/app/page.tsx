@@ -11,6 +11,9 @@ const programmer = [
     '/cu.webp',
     '/ds.webp',
     '/oneapp.webp',
+    '/cu.webp',
+    '/ds.webp',
+    '/oneapp.webp',
 ];
 
 const support = [
@@ -28,7 +31,7 @@ export default function Home() {
             <Head>
                 <title>Yayan D. Wicaksono | Profile</title>
             </Head>
-            <div className="w-3xl mx-auto flex flex-col gap-14">
+            <div className="max-w-3xl mx-auto flex flex-col gap-14">
                 {/* Header Section */}
                 <Header/>
                 {/* About Section */}

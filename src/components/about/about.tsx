@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div>
             <h2 className="text-lg font-bold mb-2 text-[#111111]">About</h2>
-            <div className="flex gap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4">
                 <Tag>#Technology</Tag>
                 <Tag>#Application Development</Tag>
                 <Tag>#AI</Tag>

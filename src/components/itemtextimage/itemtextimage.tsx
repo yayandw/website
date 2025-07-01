@@ -6,7 +6,7 @@ import Carousel from "@/components/corousel/carousel";
 
 export default function ItemTextImage({year, title, works = undefined, url = ""}: {year: string, title: string, works?: string[], url?: string}) {
     return (
-        <div className="grid grid-cols-5 items-start">
+        <div className="grid grid-cols-2 md:grid-cols-5 items-start">
             <div className="mr-4">
                 <span className="text-[#999999]">{year}</span>
             </div>

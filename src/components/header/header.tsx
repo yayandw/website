@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function Header() {
     return (
         <div className="flex items-center">
-            <div className="w-24 h-24 rounded-full overflow-hidden mr-4">
+            <div className="relative w-32 h-32 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 flex-shrink-0">
                 <Image
                     src="/avatar.jpg"
                     alt="Yayan D. Wicaksono"
-                    width="100"
-                    height="100"
-                    className="object-cover"
+                    fill
+                    sizes="(max-width: 768px) 5rem, 8rem"
+                    className="w-32 h-32 object-cover"
                 />
             </div>
             <div>

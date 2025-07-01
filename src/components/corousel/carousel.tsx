@@ -12,7 +12,7 @@ export default function Carousel({children}: { children: ReactNode }) {
         const totalWidth = items.reduce((sum, el) => sum + el.offsetWidth, 0);
         const halfWidth = totalWidth / 2;
 
-        const animationName = `autoplay_${Math.random().toString(36).substr(2, 9)}`;
+        const animationName = `autoplay_${Math.random().toString(36).slice(2, 11)}`;
 
         const keyframes = `@keyframes ${animationName} { 0% { transform: translateX(0); } 100% { transform: translateX(-${halfWidth}px); } }`;
 

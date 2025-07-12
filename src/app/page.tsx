@@ -27,7 +27,7 @@ const support = [
 
 export default function Home() {
     return (
-        <div className="bg-white w-full ps-14 pt-24 pe-14 pb-24">
+        <div className="bg-white dark:bg-gray-900 w-full ps-14 pt-24 pe-14 pb-24">
             <Head>
                 <title>Yayan D. Wicaksono | Profile</title>
             </Head>

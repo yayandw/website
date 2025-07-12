@@ -13,8 +13,8 @@ export default function Header() {
                 />
             </div>
             <div>
-                <h1 className="text-2xl font-bold text-[#111111]">Yayan D. Wicaksono</h1>
-                <p className="text-[#555555]">Programmer @easySoft Indonesia</p>
+                <h1 className="text-2xl font-bold text-[#111111] dark:text-[#E0E0E0]">Yayan D. Wicaksono</h1>
+                <p className="text-[#555555] dark:text-[#AAAAAA]">Programmer @easySoft Indonesia</p>
             </div>
         </div>
     )

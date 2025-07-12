@@ -11,10 +11,10 @@ export default function ItemTextImage({year, title, works = undefined, url = ""}
                 <span className="text-[#999999]">{year}</span>
             </div>
             <div className="col-span-4">
-                <Link className="text-base font-medium text-[#111111] hover:underline" href={"#"}>
+                <Link className="text-base font-medium text-[#111111] dark:text-[#E0E0E0] hover:underline" href={"#"}>
                     {title}
                 </Link>
-                <p className="text-[#555555]">PT easySoft Indonesia</p>
+                <p className="text-[#555555] dark:text-[#AAAAAA]">PT easySoft Indonesia</p>
                 {works !== undefined && (
                     <div className="max-w-1/2 mt-4">
                         <Carousel>

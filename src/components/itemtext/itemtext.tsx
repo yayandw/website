@@ -27,10 +27,10 @@ export default function ItemText({icon, year, thumbnail, title, description, url
                         className="w-12 h-12 object-cover"/>
                 )}
                 <div>
-                    <Link className="text-base font-medium text-[#111111] hover:underline" href={url} target="_blank">
+                    <Link className="text-base font-medium text-[#111111] dark:text-[#E0E0E0] hover:underline" href={url} target="_blank">
                         {`${title} `}
                     </Link>
-                    <p className="text-[#555555] line-clamp-3 overflow-hidden max-w-full">{description}</p>
+                    <p className="text-[#555555] dark:text-[#AAAAAA] line-clamp-3 overflow-hidden max-w-full">{description}</p>
                 </div>
             </div>
         </div>
